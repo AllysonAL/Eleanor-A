@@ -1,0 +1,37 @@
+<div class="box3d">
+  <div class="top side"
+    [style.transform]="`translateY(${top_translateY}) rotateX(90deg)`"
+    [style.width]="width"
+    [style.height]="deph">
+  </div>
+
+  <div class="left side"
+    [style.transform]="`translateX(${left_translateX}) rotateY(-90deg)`"
+    [style.width]="deph"
+    [style.height]="height">
+  </div>
+
+  <div class="back side"
+    [style.transform]="`translateZ(-${translateZ})`"
+    [style.width]="width"
+    [style.height]="height">
+  </div>
+
+  <div class="front side"
+    [style.transform]="`translateZ(${translateZ})`"
+    [style.width]="width"
+    [style.height]="height">
+  </div>
+
+  <div class="right side"
+    [style.transform]="`translateX(${right_translateX}) rotatey(90deg)`"
+    [style.width]="deph"
+    [style.height]="height">
+  </div>
+
+  <div class="bottom side"
+    [style.transform]="`translateY(${bottom_translateY}) rotateX(-90deg)`"
+    [style.width]="width"
+    [style.height]="deph">
+  </div>
+</div>

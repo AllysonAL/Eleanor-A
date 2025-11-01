@@ -1,0 +1,13 @@
+.box3d{
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  /*esse vai ser responsabilidade de quem chamar esse componente*/
+  transform: rotate3d(-1, -1, 0, 20deg);
+}
+
+.side{
+  position: absolute;
+  border: solid 1px black;
+  background-color:burlywood;
+  opacity: 0.6;
+}

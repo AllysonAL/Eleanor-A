@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { Box3dComponent } from './components/box3d.component/box3d.component';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Box3dComponent
   ],
   imports: [
     BrowserModule,
