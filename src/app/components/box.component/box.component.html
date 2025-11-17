@@ -1,0 +1,36 @@
+<div class="box3d">
+  <!--left-->
+   <app-box3d
+    id="leftBox"
+    [tp]="`translateX(${left_translateX})`"
+    [dimensions]="leftRight">
+  </app-box3d>
+
+  <!--back-->
+   <app-box3d
+    id="backBox"
+    [dimensions]="frontBack"
+    [tp]="`translateZ(-${translateZ})`">
+  </app-box3d>
+
+  <!--front-->
+   <app-box3d
+    id="frontBox"
+    [dimensions]="frontBack"
+    [tp]="`translateZ(${translateZ})`">
+  </app-box3d>
+
+  <!--right-->
+   <app-box3d
+    id="rightBox"
+    [dimensions]="leftRight"
+    [tp]="`translateX(${right_translateX})`">
+  </app-box3d>
+
+  <!--bottom-->
+   <app-box3d
+    id="bottomBox"
+    [dimensions]="bottom"
+    [tp]="`translateY(${bottom_translateY})`">
+  </app-box3d>
+</div>

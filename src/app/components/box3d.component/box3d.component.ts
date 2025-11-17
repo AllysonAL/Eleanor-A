@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, input, Input, OnInit } from '@angular/core';
 import { IDimensions, IUnitValue } from '../../types';
 import { toCssValue } from '../../Utils/dimension.helper';
 
@@ -9,6 +9,7 @@ import { toCssValue } from '../../Utils/dimension.helper';
   styleUrl: './box3d.component.css',
 })
 export class Box3dComponent implements OnInit{
+  @Input() tp! : string;
   @Input({ required: true }) dimensions!: IDimensions;
 
   //PROPRIEDADES CONVERTIDAS

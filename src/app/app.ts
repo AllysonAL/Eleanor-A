@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IDimensions, Unit } from './types';
+import { IItemDimensions } from './types/i-item-dimensions.interface';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,11 @@ import { IDimensions, Unit } from './types';
 export class App {
   protected title = 'eleanor-a';
 
-  dimensoesCaixa1 : IDimensions = {
-    deph : { value: 250, unit: Unit.PX },
-    width : { value: 250, unit: Unit.PX },
-    height : { value: 250, unit: Unit.PX }
+  dimensoesCaixa1 : IItemDimensions = {
+    deph : { value: 300, unit: Unit.PX },
+    width : { value: 75, unit: Unit.PX },
+    height : { value: 100, unit: Unit.PX },
+    thickness: { value: 5, unit: Unit.PX }
   };
 
    dimensoesCaixa2 : IDimensions = {
